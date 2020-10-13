@@ -23,7 +23,15 @@
 
 #pragma mark - その他のメソッド
 
+// フルネームを返すメソッド
+- (NSString *)fullName:(NSString *)sei lastName:(NSString *)mei {
+    NSString *sei_mei = [NSString stringWithFormat:@"%@ %@",sei,mei];
+    return sei_mei;
+}
 
-
+// counterをカウントアップするメソッド
+- (void)countUp {
+    _counter++;
+}
 
 @end
