@@ -13,10 +13,17 @@
 
 @implementation ViewController
 
+#pragma mark - ライフサイクルメソッド
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+
+#pragma mark - その他のメソッド
+
+
 
 
 @end
