@@ -17,7 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // fullNameメソッドの動作テスト
+    NSString *name = [self fullName:@"三浦" lastName:@"尊敏"];
+    NSLog(@"フルネームは%@です。",name);
+    
+    // countUpメソッドの動作テスト
+    for (int i = 0; i<=2; i++) {
+        [self countUp];
+    }
+    NSLog(@"counterの数値は%dです",_counter);
+    
 }
 
 
