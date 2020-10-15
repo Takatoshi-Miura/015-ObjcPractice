@@ -26,6 +26,9 @@
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mWG-FT-n0h">
                                 <rect key="frame" x="88" y="243" width="238" height="31"/>
+                                <connections>
+                                    <action selector="updateValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zsm-Ca-23l"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -40,6 +43,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="slider" destination="mWG-FT-n0h" id="DmE-Cd-r3J"/>
                         <outlet property="textField" destination="ipe-mB-1CT" id="6o0-RH-ZG0"/>
                     </connections>
                 </viewController>

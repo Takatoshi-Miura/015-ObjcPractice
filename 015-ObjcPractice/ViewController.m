@@ -14,6 +14,11 @@
 // テキストフィールド
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
+// スライダー
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+- (IBAction)updateValue:(id)sender;
+
+
 @end
 
 
@@ -52,6 +57,11 @@
 // counterをカウントアップするメソッド
 - (void)countUp {
     _counter++;
+}
+
+// スライダーの値を更新するメソッド
+- (IBAction)updateValue:(id)sender {
+    NSLog(@"%.1f %%", _slider.value * 100);
 }
 
 @end
