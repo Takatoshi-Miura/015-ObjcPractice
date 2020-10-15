@@ -30,6 +30,12 @@
                                     <action selector="updateValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zsm-Ca-23l"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWx-VJ-jcI">
+                                <rect key="frame" x="90" y="296" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -37,8 +43,11 @@
                             <constraint firstItem="mWG-FT-n0h" firstAttribute="top" secondItem="ipe-mB-1CT" secondAttribute="bottom" constant="59" id="3jo-oF-hI2"/>
                             <constraint firstItem="ipe-mB-1CT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="9wf-um-Xdd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mWG-FT-n0h" secondAttribute="trailing" constant="90" id="OO7-Kn-E33"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AWx-VJ-jcI" secondAttribute="trailing" constant="90" id="Q05-B4-2y8"/>
+                            <constraint firstItem="AWx-VJ-jcI" firstAttribute="top" secondItem="mWG-FT-n0h" secondAttribute="bottom" constant="23" id="doT-lU-03s"/>
                             <constraint firstItem="ipe-mB-1CT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="eSA-Cg-493"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ipe-mB-1CT" secondAttribute="trailing" constant="90" id="nkH-Y4-pyX"/>
+                            <constraint firstItem="AWx-VJ-jcI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="uXJ-fc-VGX"/>
                             <constraint firstItem="mWG-FT-n0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="x5v-NF-0DE"/>
                         </constraints>
                     </view>

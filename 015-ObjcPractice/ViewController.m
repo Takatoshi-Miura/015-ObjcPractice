@@ -38,12 +38,13 @@
     for (int i = 0; i<=2; i++) {
         [self countUp];
     }
-    NSLog(@"counterの数値は%dです",_counter);
+    NSLog(@"counterの数値は%ldです",(long)_counter);
     
     // テキストフィールドテスト
     _textField.text = @"textFieldテスト";
     _textField.textColor = [UIColor systemBlueColor];
 }
+
 
 
 #pragma mark - その他のメソッド
