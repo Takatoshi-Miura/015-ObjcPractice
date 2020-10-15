@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 - (IBAction)updateValue:(id)sender;
 
+// スライダー値表示ラベル
+@property (weak, nonatomic) IBOutlet UILabel *sliderLabel;
 
 @end
 
@@ -60,9 +62,10 @@
     _counter++;
 }
 
-// スライダーの値を更新するメソッド
+// スライダーの値をラベルに表示するメソッド
 - (IBAction)updateValue:(id)sender {
     NSLog(@"%.1f %%", _slider.value * 100);
+    _sliderLabel.text = [NSString stringWithFormat:@"%.2f %%",_slider.value * 100];
 }
 
 @end

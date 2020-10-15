@@ -30,7 +30,7 @@
                                     <action selector="updateValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zsm-Ca-23l"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWx-VJ-jcI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWx-VJ-jcI">
                                 <rect key="frame" x="90" y="296" width="234" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -53,6 +53,7 @@
                     </view>
                     <connections>
                         <outlet property="slider" destination="mWG-FT-n0h" id="DmE-Cd-r3J"/>
+                        <outlet property="sliderLabel" destination="AWx-VJ-jcI" id="7xn-by-g8b"/>
                         <outlet property="textField" destination="ipe-mB-1CT" id="6o0-RH-ZG0"/>
                     </connections>
                 </viewController>
