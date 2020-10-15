@@ -9,7 +9,14 @@
 
 @interface ViewController ()
 
+#pragma mark - UIの設定
+
+// テキストフィールド
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
 @end
+
+
 
 @implementation ViewController
 
@@ -28,6 +35,9 @@
     }
     NSLog(@"counterの数値は%dです",_counter);
     
+    // テキストフィールドテスト
+    _textField.text = @"textFieldテスト";
+    _textField.textColor = [UIColor systemBlueColor];
 }
 
 
