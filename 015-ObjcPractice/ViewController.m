@@ -13,6 +13,8 @@
 
 // テキストフィールド
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *colorNames;
+
 
 // スライダー
 @property (weak, nonatomic) IBOutlet UISlider *slider;
