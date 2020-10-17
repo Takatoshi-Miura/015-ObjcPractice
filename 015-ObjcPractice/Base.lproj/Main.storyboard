@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZj-D1-mYR">
-                                <rect key="frame" x="90" y="431" width="234" height="34"/>
+                                <rect key="frame" x="90" y="327" width="234" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="234" id="DGd-rc-rKP"/>
                                 </constraints>
@@ -45,7 +45,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uLA-HE-h69">
-                                <rect key="frame" x="90" y="473" width="234" height="34"/>
+                                <rect key="frame" x="90" y="369" width="234" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="234" id="Yye-ah-hsF"/>
                                 </constraints>
@@ -53,7 +53,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="slL-hM-w9N">
-                                <rect key="frame" x="90" y="515" width="234" height="34"/>
+                                <rect key="frame" x="90" y="411" width="234" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="234" id="UyI-Tl-PBe"/>
                                 </constraints>
@@ -65,23 +65,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mWG-FT-n0h" firstAttribute="top" secondItem="ipe-mB-1CT" secondAttribute="bottom" constant="59" id="3jo-oF-hI2"/>
-                            <constraint firstItem="eZj-D1-mYR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8vl-iZ-WNy"/>
                             <constraint firstItem="ipe-mB-1CT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="9wf-um-Xdd"/>
+                            <constraint firstItem="eZj-D1-mYR" firstAttribute="top" secondItem="AWx-VJ-jcI" secondAttribute="bottom" constant="10" id="NCe-OL-Xxc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mWG-FT-n0h" secondAttribute="trailing" constant="90" id="OO7-Kn-E33"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AWx-VJ-jcI" secondAttribute="trailing" constant="90" id="Q05-B4-2y8"/>
                             <constraint firstItem="uLA-HE-h69" firstAttribute="top" secondItem="eZj-D1-mYR" secondAttribute="bottom" constant="8" symbolic="YES" id="RpE-69-y0C"/>
-                            <constraint firstItem="uLA-HE-h69" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="SSe-rA-O5O"/>
                             <constraint firstItem="eZj-D1-mYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VH1-9X-6tP"/>
                             <constraint firstItem="AWx-VJ-jcI" firstAttribute="top" secondItem="mWG-FT-n0h" secondAttribute="bottom" constant="23" id="doT-lU-03s"/>
                             <constraint firstItem="slL-hM-w9N" firstAttribute="top" secondItem="uLA-HE-h69" secondAttribute="bottom" constant="8" symbolic="YES" id="eM0-AS-ymq"/>
                             <constraint firstItem="ipe-mB-1CT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="eSA-Cg-493"/>
-                            <constraint firstItem="slL-hM-w9N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="hlY-fR-07x"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uLA-HE-h69" secondAttribute="trailing" constant="90" id="iSJ-iU-8aq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="slL-hM-w9N" secondAttribute="trailing" constant="90" id="lo0-JL-OUW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ipe-mB-1CT" secondAttribute="trailing" constant="90" id="nkH-Y4-pyX"/>
                             <constraint firstItem="uLA-HE-h69" firstAttribute="top" secondItem="eZj-D1-mYR" secondAttribute="bottom" constant="8" symbolic="YES" id="qMl-uO-pvi"/>
                             <constraint firstItem="AWx-VJ-jcI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="uXJ-fc-VGX"/>
                             <constraint firstItem="mWG-FT-n0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="x5v-NF-0DE"/>
+                            <constraint firstItem="slL-hM-w9N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yIF-5r-yO1"/>
+                            <constraint firstItem="uLA-HE-h69" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zih-85-two"/>
                         </constraints>
                     </view>
                     <connections>

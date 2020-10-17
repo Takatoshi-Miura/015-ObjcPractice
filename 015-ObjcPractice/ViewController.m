@@ -47,6 +47,11 @@
     // テキストフィールドテスト
     _textField.text = @"textFieldテスト";
     _textField.textColor = [UIColor systemBlueColor];
+    
+    // アウトレットコレクションテスト
+    for (UITextField *fld in _colorNames) {
+        fld.placeholder = @"好きな色は何ですか？";
+    }
 }
 
 
