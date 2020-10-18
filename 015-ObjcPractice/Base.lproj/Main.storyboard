@@ -60,13 +60,49 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVa-Sz-1Sf">
+                                <rect key="frame" x="264" y="453" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0gk-fb-9VY"/>
+                                </constraints>
+                                <state key="normal" title="花"/>
+                                <connections>
+                                    <action selector="touchWordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRN-GM-fMV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLD-sr-ACt">
+                                <rect key="frame" x="264" y="491" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="YjX-lV-80G"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="d6x-9C-fnj"/>
+                                </constraints>
+                                <state key="normal" title="鳥"/>
+                                <connections>
+                                    <action selector="touchWordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QfB-gP-2Ah"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英語では？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fr-KD-3Jg">
+                                <rect key="frame" x="90" y="462" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="g9i-WL-UCF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mWG-FT-n0h" firstAttribute="top" secondItem="ipe-mB-1CT" secondAttribute="bottom" constant="59" id="3jo-oF-hI2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kLD-sr-ACt" secondAttribute="trailing" constant="90" id="4Rb-y8-Im3"/>
                             <constraint firstItem="ipe-mB-1CT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="9wf-um-Xdd"/>
+                            <constraint firstItem="4fr-KD-3Jg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="CMe-FU-e1I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pVa-Sz-1Sf" secondAttribute="trailing" constant="90" id="HhK-91-rS5"/>
                             <constraint firstItem="eZj-D1-mYR" firstAttribute="top" secondItem="AWx-VJ-jcI" secondAttribute="bottom" constant="10" id="NCe-OL-Xxc"/>
+                            <constraint firstItem="kLD-sr-ACt" firstAttribute="top" secondItem="pVa-Sz-1Sf" secondAttribute="bottom" constant="8" symbolic="YES" id="O9I-m4-2uI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mWG-FT-n0h" secondAttribute="trailing" constant="90" id="OO7-Kn-E33"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AWx-VJ-jcI" secondAttribute="trailing" constant="90" id="Q05-B4-2y8"/>
                             <constraint firstItem="uLA-HE-h69" firstAttribute="top" secondItem="eZj-D1-mYR" secondAttribute="bottom" constant="8" symbolic="YES" id="RpE-69-y0C"/>
@@ -75,8 +111,10 @@
                             <constraint firstItem="slL-hM-w9N" firstAttribute="top" secondItem="uLA-HE-h69" secondAttribute="bottom" constant="8" symbolic="YES" id="eM0-AS-ymq"/>
                             <constraint firstItem="ipe-mB-1CT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="eSA-Cg-493"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ipe-mB-1CT" secondAttribute="trailing" constant="90" id="nkH-Y4-pyX"/>
+                            <constraint firstItem="pVa-Sz-1Sf" firstAttribute="top" secondItem="slL-hM-w9N" secondAttribute="bottom" constant="8" symbolic="YES" id="piu-Od-SwM"/>
                             <constraint firstItem="uLA-HE-h69" firstAttribute="top" secondItem="eZj-D1-mYR" secondAttribute="bottom" constant="8" symbolic="YES" id="qMl-uO-pvi"/>
                             <constraint firstItem="AWx-VJ-jcI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="uXJ-fc-VGX"/>
+                            <constraint firstItem="4fr-KD-3Jg" firstAttribute="top" secondItem="slL-hM-w9N" secondAttribute="bottom" constant="17" id="uXM-Cf-SFJ"/>
                             <constraint firstItem="mWG-FT-n0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="x5v-NF-0DE"/>
                             <constraint firstItem="slL-hM-w9N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yIF-5r-yO1"/>
                             <constraint firstItem="uLA-HE-h69" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zih-85-two"/>
@@ -86,6 +124,7 @@
                         <outlet property="slider" destination="mWG-FT-n0h" id="DmE-Cd-r3J"/>
                         <outlet property="sliderLabel" destination="AWx-VJ-jcI" id="7xn-by-g8b"/>
                         <outlet property="textField" destination="ipe-mB-1CT" id="6o0-RH-ZG0"/>
+                        <outlet property="woadLabel" destination="4fr-KD-3Jg" id="gKM-KE-J4W"/>
                         <outletCollection property="colorNames" destination="eZj-D1-mYR" id="jEl-O4-gOS"/>
                         <outletCollection property="colorNames" destination="uLA-HE-h69" id="e1o-D8-vJc"/>
                         <outletCollection property="colorNames" destination="slL-hM-w9N" id="OTc-LM-NyO"/>

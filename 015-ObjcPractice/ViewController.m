@@ -15,13 +15,16 @@
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *colorNames;
 
-
 // スライダー
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 - (IBAction)updateValue:(id)sender;
 
 // スライダー値表示ラベル
 @property (weak, nonatomic) IBOutlet UILabel *sliderLabel;
+
+// 英訳ラベル、翻訳ボタン
+@property (weak, nonatomic) IBOutlet UILabel *woadLabel;
+- (IBAction)touchWordButton:(UIButton *)sender;
 
 @end
 
@@ -71,8 +74,22 @@
 
 // スライダーの値をラベルに表示するメソッド
 - (IBAction)updateValue:(id)sender {
-    NSLog(@"%.1f %%", _slider.value * 100);
+    //NSLog(@"%.1f %%", _slider.value * 100);
     _sliderLabel.text = [NSString stringWithFormat:@"%.2f %%",_slider.value * 100];
+}
+
+// ボタンの英訳を行うメソッド
+- (IBAction)touchWordButton:(UIButton *)sender {
+    switch (sender.tag) {
+        case 0:
+            _woadLabel.text = @"flower";
+            break;
+        case 1:
+            _woadLabel.text = @"bird";
+            break;
+        default:
+            break;
+    }
 }
 
 @end
