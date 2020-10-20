@@ -6,3 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Hello.h"
+
+@implementation Hello
+
+// helloメソッド
+- (NSString *)hello:(NSString *)who {
+    NSString *msg = [NSString stringWithFormat:@"Hello,%@の%@さん",_where,who];
+    return  msg;
+}
+
+
+@end
