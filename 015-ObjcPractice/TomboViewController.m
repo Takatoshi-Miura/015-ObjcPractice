@@ -9,11 +9,18 @@
 
 @interface TomboViewController()
 
+// プロパティの宣言
+@property (weak, nonatomic) IBOutlet UIImageView *tomboImage;
+- (IBAction)tapTombo:(UITapGestureRecognizer *)sender;
 
 @end
 
 
+
 @implementation TomboViewController
 
+// メソッドの宣言
+- (IBAction)tapTombo:(UITapGestureRecognizer *)sender {
+}
 
 @end
