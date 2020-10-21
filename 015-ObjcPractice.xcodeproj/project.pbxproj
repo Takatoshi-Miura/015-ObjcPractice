@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D2E1744253FA7B300561693 /* Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2E1743253FA7B300561693 /* Hello.m */; };
+		8DA16AE82540F938001D2E38 /* TomboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA16AE72540F938001D2E38 /* TomboViewController.m */; };
 		8DBFF3892536712400F61CD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFF3882536712400F61CD0 /* AppDelegate.m */; };
 		8DBFF38C2536712400F61CD0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFF38B2536712400F61CD0 /* SceneDelegate.m */; };
 		8DBFF38F2536712400F61CD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFF38E2536712400F61CD0 /* ViewController.m */; };
@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D2E1743253FA7B300561693 /* Hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hello.m; sourceTree = "<group>"; };
-		8D2E1748253FA7C700561693 /* Hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hello.h; sourceTree = "<group>"; };
+		8DA16AE72540F938001D2E38 /* TomboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TomboViewController.m; sourceTree = "<group>"; };
+		8DA16AEC2540F99D001D2E38 /* TomboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TomboViewController.h; sourceTree = "<group>"; };
 		8DBFF3842536712400F61CD0 /* 015-ObjcPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "015-ObjcPractice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBFF3872536712400F61CD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DBFF3882536712400F61CD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 				8DBFF38A2536712400F61CD0 /* SceneDelegate.h */,
 				8DBFF38B2536712400F61CD0 /* SceneDelegate.m */,
 				8DBFF3902536712400F61CD0 /* Main.storyboard */,
-				8D2E1748253FA7C700561693 /* Hello.h */,
-				8D2E1743253FA7B300561693 /* Hello.m */,
+				8DA16AEC2540F99D001D2E38 /* TomboViewController.h */,
+				8DA16AE72540F938001D2E38 /* TomboViewController.m */,
 				8DBFF38D2536712400F61CD0 /* ViewController.h */,
 				8DBFF38E2536712400F61CD0 /* ViewController.m */,
 				8DBFF3932536712700F61CD0 /* Assets.xcassets */,
@@ -271,10 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DA16AE82540F938001D2E38 /* TomboViewController.m in Sources */,
 				8DBFF38F2536712400F61CD0 /* ViewController.m in Sources */,
 				8DBFF3892536712400F61CD0 /* AppDelegate.m in Sources */,
 				8DBFF39A2536712700F61CD0 /* main.m in Sources */,
-				8D2E1744253FA7B300561693 /* Hello.m in Sources */,
 				8DBFF38C2536712400F61CD0 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
