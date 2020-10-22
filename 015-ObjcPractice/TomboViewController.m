@@ -15,12 +15,18 @@
 // メソッドの宣言
 - (IBAction)tapView:(UITapGestureRecognizer *)sender;
 - (IBAction)tapTombo:(UITapGestureRecognizer *)sender;
+- (IBAction)doubleTapTombo:(UITapGestureRecognizer *)sender;
 
 @end
 
 
 
 @implementation TomboViewController
+
+// トンボをダブルタップした時の処理
+- (IBAction)doubleTapTombo:(UITapGestureRecognizer *)sender {
+    [self zoomTombo:sender];
+}
 
 // トンボをタップした時の処理
 - (IBAction)tapTombo:(UITapGestureRecognizer *)sender {
@@ -50,13 +56,24 @@
     _tomboImage.center = CGPointMake(x, y);
 }
 
-// タップした位置にトンボを移動させるメソッド
+// トンボをタップした位置に移動させるメソッド
 - (void)moveTomboTapLocation:(UITapGestureRecognizer *)sender {
     // タップされた座標を取得
     CGPoint tapLocation = [sender locationInView:self.view];
     
     // タップされた座標にトンボを移動する
     _tomboImage.center = tapLocation;
+}
+
+// トンボを拡大縮小する処理
+- (void)zoomTombo:(UITapGestureRecognizer *)sender {
+    // 拡大処理を適用、適用済みなら適用前に戻す
+    UIImageView *tombo = (UIImageView *)sender.view;
+    if (CGAffineTransformIsIdentity(sender.view.transform)) {
+        tombo.transform = CGAffineTransformMakeScale(3.0, 3.0);
+    } else {
+        tombo.transform = CGAffineTransformIdentity;
+    }
 }
 
 @end

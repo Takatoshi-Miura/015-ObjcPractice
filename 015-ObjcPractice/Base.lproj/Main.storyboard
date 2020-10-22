@@ -148,6 +148,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="uBZ-wt-CUz" appends="YES" id="Xck-lm-Bb6"/>
+                                    <outletCollection property="gestureRecognizers" destination="Al4-BN-giQ" appends="YES" id="mA8-Eb-vvd"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -171,6 +172,11 @@
                 <tapGestureRecognizer id="fTm-Xk-5sW">
                     <connections>
                         <action selector="tapView:" destination="jsU-ls-z2e" id="xD2-IP-dzH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="Al4-BN-giQ">
+                    <connections>
+                        <action selector="doubleTapTombo:" destination="jsU-ls-z2e" id="SNo-Zb-mcO"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
