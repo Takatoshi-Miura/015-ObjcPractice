@@ -11,6 +11,9 @@
 
 // プロパティの宣言
 @property (weak, nonatomic) IBOutlet UIImageView *tomboImage;
+
+// メソッドの宣言
+- (IBAction)tapView:(UITapGestureRecognizer *)sender;
 - (IBAction)tapTombo:(UITapGestureRecognizer *)sender;
 
 @end
@@ -23,6 +26,13 @@
 - (IBAction)tapTombo:(UITapGestureRecognizer *)sender {
     [self moveTomboRandom];
 }
+
+// ビューをタップした時の処理
+- (IBAction)tapView:(UITapGestureRecognizer *)sender {
+    [self moveTomboTapLocation:sender];
+}
+
+
 
 // トンボをランダムな位置に移動するメソッド
 - (void)moveTomboRandom {
@@ -38,6 +48,15 @@
     CGFloat x = (arc4random() % width) + tomboWidth/2;
     CGFloat y = (arc4random() % height) + tomboHeight/2;
     _tomboImage.center = CGPointMake(x, y);
+}
+
+// タップした位置にトンボを移動させるメソッド
+- (void)moveTomboTapLocation:(UITapGestureRecognizer *)sender {
+    // タップされた座標を取得
+    CGPoint tapLocation = [sender locationInView:self.view];
+    
+    // タップされた座標にトンボを移動する
+    _tomboImage.center = tapLocation;
 }
 
 @end

@@ -147,12 +147,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="uBZ-wt-CUz" appends="YES" id="EY6-YE-O1W"/>
+                                    <outletCollection property="gestureRecognizers" destination="uBZ-wt-CUz" appends="YES" id="Xck-lm-Bb6"/>
                                 </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xkp-Yq-wMc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fTm-Xk-5sW" appends="YES" id="taK-ml-QDq"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="tomboImage" destination="aGF-7i-1Zf" id="ePA-WC-EjO"/>
@@ -161,7 +165,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLW-B4-eqZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="uBZ-wt-CUz">
                     <connections>
-                        <action selector="tapTombo:" destination="jsU-ls-z2e" id="41w-fU-KO2"/>
+                        <action selector="tapTombo:" destination="jsU-ls-z2e" id="ymk-rO-DRX"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fTm-Xk-5sW">
+                    <connections>
+                        <action selector="tapView:" destination="jsU-ls-z2e" id="xD2-IP-dzH"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
