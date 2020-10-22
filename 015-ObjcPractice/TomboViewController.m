@@ -21,6 +21,11 @@
 
 // トンボをタップした時の処理
 - (IBAction)tapTombo:(UITapGestureRecognizer *)sender {
+    [self moveTomboRandom];
+}
+
+// トンボをランダムな位置に移動するメソッド
+- (void)moveTomboRandom {
     // サイズの取得
     CGFloat tomboWidth  = _tomboImage.bounds.size.width;
     CGFloat tomboHeight = _tomboImage.bounds.size.height;
