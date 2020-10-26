@@ -16,12 +16,18 @@
 - (IBAction)tapView:(UITapGestureRecognizer *)sender;
 - (IBAction)tapTombo:(UITapGestureRecognizer *)sender;
 - (IBAction)doubleTapTombo:(UITapGestureRecognizer *)sender;
+- (IBAction)dragging:(UIPanGestureRecognizer *)sender;
 
 @end
 
 
 
 @implementation TomboViewController
+
+// トンボをドラッグした時の処理
+- (IBAction)dragging:(UIPanGestureRecognizer *)sender {
+    [self moveTomboDragging:sender];
+}
 
 // トンボをダブルタップした時の処理
 - (IBAction)doubleTapTombo:(UITapGestureRecognizer *)sender {
@@ -30,7 +36,7 @@
 
 // トンボをタップした時の処理
 - (IBAction)tapTombo:(UITapGestureRecognizer *)sender {
-    [self moveTomboRandom];
+//    [self moveTomboRandom];
 }
 
 // ビューをタップした時の処理
@@ -74,6 +80,21 @@
     } else {
         tombo.transform = CGAffineTransformIdentity;
     }
+}
+
+// トンボをドラッグで移動するメソッド
+- (void)moveTomboDragging:(UIPanGestureRecognizer *)sender {
+    // 移動量の取得
+    CGPoint translation = [sender translationInView:self.view];
+    
+    // 移動量分、トンボも移動させる
+    CGPoint homeLoc = _tomboImage.center;
+    homeLoc.x += translation.x;
+    homeLoc.y += translation.y;
+    _tomboImage.center = homeLoc;
+    
+    // ドラッグ開始位置をリセットする
+    [sender setTranslation:CGPointZero inView:self.view];
 }
 
 @end
